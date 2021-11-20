@@ -29,23 +29,23 @@
         </ul>
     </header>
     <main>
-        <h2>Vic0 & Pablit0s Autoexec Generator</h2>
-        <p>This site can generate you an CS:GO autoexec.cfg with all settings you need.</p> 
-        <p>Including most of the settings in CS:GOs settings menu but also a lot custom settings not available in the settings menu like toggle binds and double assignments.</p>
-        <p>You can just go through all settings and once you have all set to your preference you can generate and download your autoexec.cfg.</p>
-        <br>
+        <div id="intro">
+            <h2>Vic0 & Pablit0s Autoexec Generator</h2>
+            <p>This site can generate you an CS:GO autoexec.cfg with all settings you need.</p> 
+            <p>Including most of the settings in CS:GOs settings menu but also a lot custom settings not available in the settings menu like toggle binds and double assignments.</p>
+            <p>You can just go through all settings and once you have all set to your preference you can generate and download your autoexec.cfg.</p>
+        </div>
         <hr>
-        <br>
         <div id="form">
             <form action="" id="execForm">
-                <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" value="0" id="conEnable" checked>
-                    <label class="form-check-label" for="conEnable">
-                      Enable Consle <code class="user-select-normal">"con_enable 1"</code><span class="badge text-warning">! You should not change this !</span>
-                    </label>
-                  </div>
+                <div id="audio_music">
+                    <h2>Audio & Music</h2>
+                    <h3>Audio</h3>
+                    <span class="hovertext" data-hover="Overall Game Volume">Master Volume</span>
+                    <input type="range" min="1" max="100" value="50">
+                </div>
             </form>
-        </div>
+        </div><!--div#form-->
     </main>
     <script src="./js/theme.js"></script>
 </body>
