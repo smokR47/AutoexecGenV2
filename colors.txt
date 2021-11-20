@@ -1,0 +1,13 @@
+dark:
+    background: #1b2838
+    text: #c7d5e0
+    light border: #66c0f4
+    medium border: #2a475e
+    dark border: #171a21
+
+dark2: 
+    background: #2c2f33
+    text:  #ffffff
+    light border: #99aab5
+    medium border:
+    dark border: #23272a

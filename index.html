@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Autoexec Generator</title>
+</head>
+<body>
+    <header>
+        <h2 class="logo">AUTO EXEC GENERATOR</h2>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-button">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+
+        <ul class="menu">
+            <a href="#">AUDIO</a>
+            <a href="#">GAME</a>
+            <a href="#">MOUSE</a>
+            <a href="#">BINDS</a>
+            <a href="#">OTHERS</a>
+            <button class="switchTheme" id="switchTheme" onclick="toggleTheme()">dark Mode</button>
+            <label for="chk" class="hide-menu-button">
+                <i class="fas fa-times"></i>
+            </label>
+        </ul>
+    </header>
+    <main>
+        <h2>Vic0 & Pablit0s Autoexec Generator</h2>
+        <p>This site can generate you an CS:GO autoexec.cfg with all settings you need.</p> 
+        <p>Including most of the settings in CS:GOs settings menu but also a lot custom settings not available in the settings menu like toggle binds and double assignments.</p>
+        <p>You can just go through all settings and once you have all set to your preference you can generate and download your autoexec.cfg.</p>
+        <br>
+        <hr>
+        <br>
+        <div id="form">
+            <form action="" id="execForm">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" value="0" id="conEnable" checked>
+                    <label class="form-check-label" for="conEnable">
+                      Enable Consle <code class="user-select-normal">"con_enable 1"</code><span class="badge text-warning">! You should not change this !</span>
+                    </label>
+                  </div>
+            </form>
+        </div>
+    </main>
+    <script src="./js/theme.js"></script>
+</body>
+</html>

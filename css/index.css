@@ -1,0 +1,24 @@
+:root,
+:root.dark {
+    --backgroundColor: #2c2f33;
+    --secondBackgroundColor: #444649;
+    --textColor: #99aab5;
+    --navBarColor: #23272a;
+    --secondary: #7289da;
+}
+
+:root.light {
+    --backgroundColor: #99aab5;
+    --secondBackgroundColor: #85939c;
+    --textColor: #23272a;
+    --navBarColor: #99aab5;
+    --secondary: #7289da;
+}
+
+main.h2 {
+    margin: 3em;
+    text-align: center;
+}
+.form {
+    margin: 0 auto;
+}

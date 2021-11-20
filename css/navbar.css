@@ -1,0 +1,140 @@
+:root,
+:root.dark {
+    --backgroundColor: #2c345b;
+    --textColor: #ffffff;
+    --hoverColor: #66c0f4;
+}
+
+:root.light {
+    --backgroundColor: #99aab5;
+    --textColor: #23272a;
+    --hoverColor: #66c0f4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat",sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: var(--backgroundColor);
+    padding: 0 20px;
+    color: var(--textColor);
+}
+
+.logo {
+    line-height: 100px;
+    float: left;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.menu {
+    float: right;
+    line-height: 100px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #FFF;
+    margin: 0 10px;
+    transition: 0.4s;
+}
+
+.show-menu-button,
+.hide-menu-button {
+    transition: 0.4s;
+    font-size: 30px;
+    display: none;
+    cursor: pointer;
+    line-height: 100px;
+}
+
+.show-menu-button {
+    float: right;
+}
+
+.menu a:hover,
+.logo:hover,
+.show-menu-button i:hover,
+.hide-menu-button i:hover {
+    color: var(--hoverColor);
+}
+
+#chk {
+    display: none;
+}
+
+button,
+button::after {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button {
+    border: none;
+	background: none;
+	color: var(--textColor);
+	font: inherit;
+	padding: 1em 2em;
+	position: relative;
+	margin: 5px;
+	cursor: pointer;
+}
+
+button::before,
+button::after {
+	background: #ffb400;
+	content: "";
+	position: absolute;
+	z-index: -1;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+    color: var(--hoverColor);
+    border-width: 2px;
+}
+
+@media screen and (max-width:800px) {
+    .show-menu-button,
+    .hide-menu-button {
+        display: block;
+    }
+    .logo h2 {
+        text-align: center;
+    }
+    
+
+    .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #333;
+        padding: 80px 0;        
+        text-align: center;
+        transition: 0.7s;
+        right: -100%;
+        
+    }
+
+    .menu a {
+        display: block;
+    }
+
+    .hide-menu-button {
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+
+    #chk:checked ~ .menu{
+        right: 0;
+    }
+}
