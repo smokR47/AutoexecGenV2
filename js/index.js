@@ -121,10 +121,11 @@ function generate() {
     exec += "cl_hud_color " + form["hud-color-val"].value + "\n";
     exec += "cl_hud_background_alpha " + form["hud-alpha-val"].value + "\n";
     exec += "cl_hud_healthammo_style " + form["ammo-style-val"].value + "\n";
+    exec += "cl_hud_bomb_under_radar " + form["bomb-pos-val"].value + "\n";
 
-
-    // fill textarea with the exec
-    document.getElementById("exec-output").innerHTML = exec;
+    // fill textarea with the exec and select it
+    document.getElementById("exec-output").value = exec;
+    document.getElementById("exec-output").select()
 
     return exec;
 }
