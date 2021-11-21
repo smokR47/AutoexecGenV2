@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/donwload-button.css">
+    <link rel="stylesheet" href="css/select-boxes.css">
     <title>Autoexec Generator</title>
 </head>
 <body>
@@ -31,10 +32,11 @@
     </header>
     <main>
         <div id="intro" class="sub-container">
-            <h2>Vic0 & Pablit0s Autoexec Generator</h2>
+            <h1 class="code"><span id="hide1">ッ</span>Autoexec Generator<span id="hide2"}></span> </h1>
+            <h4>by Vic0 & Pablit0</h4>
             <p>This site can generate you an CS:GO autoexec.cfg with all settings you need.</p> 
             <p>Including most of the settings in CS:GOs settings menu but also a lot custom settings not available in the settings menu like toggle binds and double assignments.</p>
-            <p>You can just go through all settings and once you have all set to your preference you can generate and download your autoexec.cfg.</p>
+            <p>You can just go through all settings and once you have all set to your preference you can generate and download your autoexec.cfg file.</p>
         </div>
         <div id="form">
             <form action="none" id="execForm">
@@ -71,7 +73,7 @@
                     <hr>
                     <div id="adv-audio-processing">
                         <label for="adv-audio-processing-dropdown"><span class="hovertext" data-hover="3D audio processing also called Sound Occlusion is a technology in csgo that allows you to pinpoint a sound coming from a certain direction"><h4>Advanced 3D Audio Processing</h4></span></label>
-                        <select name="adv-audio-processing-dropdown" id="adv-audio-processing-val">
+                        <select class="select-box" name="adv-audio-processing-dropdown" id="adv-audio-processing-val">
                             <option value="yes" selected>Yes</option>
                             <option value="no">No</option>
                         </select> 
@@ -87,7 +89,7 @@
                     <hr>
                     <div id="voip-positional">
                         <label for="voip-positional-dropdown"><span class="hovertext" data-hover="Hear ingame voice chat from the position a player is standing"><h4>VOIP Positional</h4></span></label>
-                        <select name="voip-positional-dropdown" id="voip-positional-val">
+                        <select class="select-box" name="voip-positional-dropdown" id="voip-positional-val">
                             <option value="yes">Yes</option>
                             <option value="no" selected>No</option>
                         </select> 
@@ -95,7 +97,7 @@
                     <hr>
                     <div id="audio-in-background">
                         <label for="audio-in-background-dropdown"><h4>Play Audio when in Background</h4></label>
-                        <select name="audio-in-background-dropdown" id="audio-in-background-val">
+                        <select class="select-box" name="audio-in-background-dropdown" id="audio-in-background-val">
                             <option value="yes">Yes</option>
                             <option value="no" selected>No</option>
                         </select> 
@@ -162,7 +164,7 @@
                     <hr>
                     <div id="audio-in-background">
                         <label for="audio-in-background-dropdown"><h4>Mute MVP Music when players on both teams are alive</h4></label>
-                        <select name="audio-in-background-dropdown" id="audio-in-background-val">
+                        <select class="select-box" name="audio-in-background-dropdown" id="audio-in-background-val">
                             <option value="yes" selected>Yes</option>
                             <option value="no">No</option>
                         </select>
@@ -201,7 +203,7 @@
                     <hr>
                     <div id="max-bandwidth">
                         <label for="max-bandwidth-dropdown"><h4>Max Accaptable Game Traffic Bandwidth</h4></label>
-                        <select name="max-bandwidth-dropdown" id="max-bandwidth-val">
+                        <select class="select-box" name="max-bandwidth-dropdown" id="max-bandwidth-val">
                             <option value="1" selected>Extremly Restricted</option>
                             <option value="2">Below 384 kbps</option>
                             <option value="3">Below 512 kbps</option>
@@ -218,7 +220,7 @@
                     <hr>
                     <div id="notification-loc">
                         <label for="notification-loc-dropdown"><h4>Community Notification Location</h4></label>
-                        <select name="notification-loc-dropdown" id="notification-loc-val">
+                        <select class="select-box" name="notification-loc-dropdown" id="notification-loc-val">
                             <option value="1" selected>Top Right</option>
                             <option value="2">Top Left</option>
                             <option value="3">Bottom Right</option>
@@ -228,7 +230,7 @@
                     <hr>
                     <div id="enable-console">
                         <label for="enable-console-dropdown"><h4>Enable Developer Console</h4></label>
-                        <select name="enable-console-dropdown" id="enable-console-val">
+                        <select class="select-box" name="enable-console-dropdown" id="enable-console-val">
                             <option value="yes" selected>Yes</option>
                             <option value="no">No</option>
                         </select>
