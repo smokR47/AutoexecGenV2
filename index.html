@@ -73,7 +73,7 @@
                     <hr>
                     <div id="surround-sound">
                         <label for="surround-sound-dropdown"><span class="hovertext" data-hover="Set the type of Audio Output you have. Eg. 5.1 Surround or Stereo"><h4>Audio Output Configuration</h4></span></label>
-                        <select name="surround-sound-dropdown" id="surround-sound-val">
+                        <select class="select-box" name="surround-sound-dropdown" id="surround-sound-val">
                             <option value="1">Stereo Headphones</option>
                             <option value="2">Stereo Speakers</option>
                             <option value="3">Quad Surround Sound</option>
@@ -172,9 +172,9 @@
                         <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
-                    <div id="audio-in-background">
-                        <label for="audio-in-background-dropdown"><h4>Mute MVP Music when players on both teams are alive</h4></label>
-                        <select class="select-box" name="audio-in-background-dropdown" id="audio-in-background-val">
+                    <div id="play-mvp-when-both-teams-alive">
+                        <label for="play-mvp-when-both-teams-alive-dropdown"><h4>Mute MVP Music when players on both teams are alive</h4></label>
+                        <select class="select-box" name="play-mvp-when-both-teams-alive-dropdown" id="play-mvp-when-both-teams-alive-val">
                             <option value="yes" selected>Yes</option>
                             <option value="no">No</option>
                         </select>
