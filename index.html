@@ -69,6 +69,16 @@
                         <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
+                    <div id="surround-sound">
+                        <label for="surround-sound-dropdown"><span class="hovertext" data-hover="Set the type of Audio Output you have. Eg. 5.1 Surround or Stereo"><h4>Audio Output Configuration</h4></span></label>
+                        <select name="surround-sound-dropdown" id="surround-sound-val">
+                            <option value="1">Stereo Headphones</option>
+                            <option value="2">Stereo Speakers</option>
+                            <option value="3">Quad Surround Sound</option>
+                            <option value="4" selected>5.1 Surround Sound</option>
+                        </select> 
+                    </div>
+                    <hr>
                     <div id="adv-audio-processing">
                         <label for="adv-audio-processing-dropdown"><span class="hovertext" data-hover="3D audio processing also called Sound Occlusion is a technology in csgo that allows you to pinpoint a sound coming from a certain direction"><h4>Advanced 3D Audio Processing</h4></span></label>
                         <select name="adv-audio-processing-dropdown" id="adv-audio-processing-val">
