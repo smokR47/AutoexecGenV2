@@ -21,7 +21,7 @@
 ## Game
 # Game
 - Enable Game Instructor Messages                   Yes / No
-- Max Accaptable Matchmaking Ping             25 - 350
+- Max Accaptable Matchmaking Ping                   25 - 350
 - Max Accaptable Game Traffic Bandwidth             Extremly Restricted / Below 384 kbps / Below 512 kbps / Below 768 kbps / Below 1.0 mbps / Up to 1.5 mbps / Up to 2.0 mbps / ... / Unrestricted
 - Community Notification Location                   Top Right / Top Left / Bottom Right / Bottom Left
 - Enable Console                                    Yes / No
