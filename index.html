@@ -39,31 +39,34 @@
         <div id="form">
             <form action="" id="execForm">
                 <div id="audio-music">
-                    <h2>Audio & Music</h2>
+                    <div class="designwrap">
+                        <h1 class="sub-title-i">I</h1>
+                       <h1 class="sub-title">Audio & Music</h1>
+                     </div>  
                     <br>
                     <h3>Audio</h3>
                     <div id="master-vol">
                         Master Volume
                         <br>
-                        <input type="number" id="master-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="master-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="music-in-steam-overlay">
                         <span>Music in Steam Overlay</span>
                         <br>
-                        <input type="number" id="music-in-steam-overlay-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="music-in-steam-overlay-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="gotv-caster-vol">
                         <span>GOTV Caster Volume</span>
                         <br>
-                        <input type="number" id="gotv-caster-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="gotv-caster-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="adv-audio-processing">
@@ -77,9 +80,9 @@
                     <div id="voip-vol">
                         <span class="hovertext" data-hover="Volume of ingame player voice chat (VOIP means Voice Over IP)">VOIP Volume</span>
                         <br>
-                        <input type="number" id="voip-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="voip-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="voip-positional">
@@ -102,57 +105,57 @@
                     <div id="main-menu-vol">
                         Main Menu Music Volume
                         <br>
-                        <input type="number" id="main-menu-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="main-menu-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="round-start-vol">
                         Round Start Volume
                         <br>
-                        <input type="number" id="round-start-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="round-start-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="round-end-vol">
                         Round End Volume
                         <br>
-                        <input type="number" id="round-end-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="round-end-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="bomb-vol">
                         Bomb / Hostage Volume
                         <br>
-                        <input type="number" id="bomb-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="bomb-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="ten-sec-warning-vol">
                         Ten Seconds Warning Volume
                         <br>
-                        <input type="number" id="ten-sec-warning-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="ten-sec-warning-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="death-cam-vol">
                         Death Camera Music Volume
                         <br>
-                        <input type="number" id="death-cam-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="death-cam-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="mvp-vol">
                         MVP Music Volume
                         <br>
-                        <input type="number" id="mvp-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="mvp-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="audio-in-background">
@@ -166,9 +169,9 @@
                     <div id="dz-music-vol">
                         Danger Zone Music Volume
                         <br>
-                        <input type="number" id="dz-music-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input type="number" class="number-input" id="dz-music-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                        <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                 </div><!--div#audio-music-->
                 <div id="game">
