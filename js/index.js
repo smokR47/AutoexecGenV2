@@ -2,6 +2,9 @@ function generate() {
     var exec = "echo Loading vic0s & pablit0s generated autoexec.cfg\n";
     var form = document.forms[0]; // select the exec form
     console.log(form)
+    /*
+        Music & Sound
+    */
     exec += "volume " + (form["master-vol-val"].value / 100).toString() + "\n" ;
     exec += "snd_musicvolume_multiplier_inoverlay " + (form["music-in-steam-overlay-val"].value / 100).toString() + "\n";
     exec += "voice_caster_scale " + (form["gotv-caster-vol-val"].value / 100).toString() + "\n";
@@ -13,7 +16,6 @@ function generate() {
     }
     */
     var surrSndVal = form["surround-sound-val"].value;
-    console.log(surrSndVal)
     var surroundSoundVal = "-1"
     switch (surrSndVal) {
         case "0":
@@ -60,11 +62,70 @@ function generate() {
         exec += "snd_mute_mvp_music_live_players 0\n";
     }
     exec += "snd_dzmusic_volume " + (form["dz-music-vol-val"].value / 100).toString() + "\n";
+    /*
+        Game & Visuals
+    */
     if (form["game-instructor-val"].value === "yes") {
         exec += "gameinstructor_enable 1\n";
     } else {
         exec += "gameinstructor_enable 0\n";
     }
-    
-    console.log(exec)
+    exec += "mm_dedicated_search_maxping " + form["max-ping-val"].value + "\n"
+    var rate = "0"
+    switch (form["max-bandwidth-val"].value) {
+        case "1":
+            rate = "24576";
+            break;
+        case "2":
+            rate = "49152";
+            break;
+        case "3":
+            rate = "65536";
+            break;
+        case "4":
+            rate = "98304";
+            break;
+        case "5":
+            rate = "131072";
+            break;
+        case "6":
+            rate = "196608";
+            break;
+        case "7":
+            rate = "262144";
+            break;
+        case "8":
+            rate = "327680";
+            break;
+        case "9":
+            rate = "393216";
+            break;
+        case "10":
+            rate = "524288";
+            break;
+        case "11":
+            rate = "786432";
+            break;
+        default:
+            break;
+    }
+    exec += "rate " + rate + "\n";
+    exec += "ui_steam_overlay_notification_position " + form["notification-loc-val"].value + "\n";
+    if (form["enable-console-val"].value === "yes") {
+        exec += "con_enable 1\n";
+    } else {
+        exec += "con_enable 0\n";
+    }
+    exec += "cl_crosshair_friendly_warning " + form["friendly-warning-val"].value + "\n"
+    exec += "hud_scaling " + form["hud-scale-val"].value + "\n";
+    exec += "cl_hud_color " + form["hud-color-val"].value + "\n";
+    exec += "cl_hud_background_alpha " + form["hud-alpha-val"].value + "\n";
+    exec += "cl_hud_healthammo_style " + form["ammo-style-val"].value + "\n";
+    exec += "cl_hud_bomb_under_radar " + form["bomb-pos-val"].value + "\n";
+
+    // fill textarea with the exec and select it
+    document.getElementById("exec-output").value = exec;
+    document.getElementById("exec-output").select()
+
+    return exec;
 }

@@ -135,7 +135,6 @@
                             <option value="yes">Yes</option>
                             <option value="no" selected>No</option>
                         </select>
-                        <hr>
                     </div>
                     <br>
                     <h3>Music</h3>
@@ -232,7 +231,7 @@
                         <br>
                         <input class="number-input" type="number" id="max-ping-val" min="25" max="350" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input class="range" type="range" min="25" max="350" value="50" oninput="rangeSync(this)">
+                        <input class="range" type="range" min="25" max="350" value="100" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="max-bandwidth">
@@ -255,10 +254,10 @@
                     <div id="notification-loc">
                         <label for="notification-loc-dropdown"><h4>Community Notification Location</h4></label>
                         <select class="select-box" name="notification-loc-dropdown" id="notification-loc-val">
-                            <option value="1" selected>Top Right</option>
-                            <option value="2">Top Left</option>
-                            <option value="3">Bottom Right</option>
-                            <option value="4">Bottom Left</option>
+                            <option value="topright" selected>Top Right</option>
+                            <option value="topleft">Top Left</option>
+                            <option value="bottomright">Bottom Right</option>
+                            <option value="bottomleft">Bottom Left</option>
                         </select>
                     </div>
                     <hr>
@@ -269,12 +268,73 @@
                             <option value="no">No</option>
                         </select>
                     </div>
+                    <br>
+                    <h3>HUD</h3>
+                    <hr>
+                    <div id="friendly-warning">
+                        <label for="friendly-warning-dropdown"><h4>Friendly Fire Reticle Warning</h4></label>
+                        <select class="select-box" name="friendly-warning-dropdown" id="friendly-warning-val">
+                            <option value="0" selected>Always Off</option>
+                            <option value="1">Only on Default Crosshair</option>
+                            <option value="2">Always On</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="hud-scale">
+                        <h4>HUD Scale</h4>
+                        <br>
+                        <input class="number-input" type="number" id="hud-scale-val" min="0.50" max="0.95" value="0.85" step="0.01" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input class="range" type="range" min="0.50" max="0.95" value="0.85" step="0.01" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="hud-color">
+                        <label for="hud-color-dropdown"><h4>Friendly Fire Reticle Warning</h4></label>
+                        <select class="select-box" name="hud-color-dropdown" id="hud-color-val">
+                            <option value="0" selected>Default</option>
+                            <option value="1">White</option>
+                            <option value="2">Light Blue</option>
+                            <option value="3">Blue</option>
+                            <option value="4">Purple</option>
+                            <option value="5">Pink</option>
+                            <option value="6">Red</option>
+                            <option value="7">Orange</option>
+                            <option value="8">Yellow</option>
+                            <option value="9">Green</option>
+                            <option value="10">Aqua</option>
+                            <option value="11">Classic</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="hud-alpha">
+                        <h4>HUD Alpha</h4>
+                        <br>
+                        <input class="number-input" type="number" id="hud-alpha-val" min="0" max="1" value="0.5" step="0.01" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input class="range" type="range" min="0" max="1" value="0.5" step="0.01" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="ammo-style">
+                        <label for="ammo-style-dropdown"><h4>Health / Ammo Style</h4></label>
+                        <select class="select-box" name="ammo-style-dropdown" id="ammo-style-val">
+                            <option value="0" selected>Default</option>
+                            <option value="1">Simple</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="bomb-pos">
+                        <label for="bomb-pos-dropdown"><h4>Bomb HUD Location</h4></label>
+                        <select class="select-box large-select-box" name="bomb-pos-dropdown" id="bomb-pos-val">
+                            <option value="0">Show in Inventory</option>
+                            <option value="1" selected>Show under Radar</option>
+                        </select>
+                    </div>
                 </div><!--div#game-->
             </form>
         </div><!--div#form-->
         <div id="generate" class="download-sub-container">
             <p><button id="generate-button" onclick="generate();">Generate</button><button id="download-button" class="buttonDownload">Download</button></p>
-            <textarea name="exec-text" id="exec-output" cols="30" rows="0" readonly></textarea>
+            <textarea name="exec-text" id="exec-output" cols="70" rows="50" readonly></textarea>
         </div>
     </main>
     <script src="./js/index.js"></script>
