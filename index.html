@@ -64,11 +64,21 @@
                     </div>
                     <hr>
                     <div id="gotv-caster-vol">
-                        <span><h4>GOTV Caster Volume</h4></span>
+                        <span><h4>GOTV Caster Voice Volume</h4></span>
                         <br>
                         <input type="number" class="number-input" id="gotv-caster-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
                         <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="surround-sound">
+                        <label for="surround-sound-dropdown"><span class="hovertext" data-hover="Set the type of Audio Output you have. Eg. 5.1 Surround or Stereo"><h4>Audio Output Configuration</h4></span></label>
+                        <select name="surround-sound-dropdown" id="surround-sound-val">
+                            <option value="1">Stereo Headphones</option>
+                            <option value="2">Stereo Speakers</option>
+                            <option value="3">Quad Surround Sound</option>
+                            <option value="4" selected>5.1 Surround Sound</option>
+                        </select> 
                     </div>
                     <hr>
                     <div id="adv-audio-processing">
