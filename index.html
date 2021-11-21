@@ -38,15 +38,38 @@
         <hr>
         <div id="form">
             <form action="" id="execForm">
-                <div id="audio_music">
+                <div id="audio-music">
                     <h2>Audio & Music</h2>
                     <h3>Audio</h3>
-                    <span class="hovertext" data-hover="Overall Game Volume">Master Volume</span>
-                    <input type="range" min="1" max="100" value="50">
+                    <div id="master-vol">
+                        <span class="hovertext" data-hover="Overall Game Volume">Master Volume</span>
+                        <br>
+                        <input type="number" id="master-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <div id="music-in-steam-overlay">
+                        <span>Music in Steam Overlay</span>
+                        <br>
+                        <input type="number" id="music-in-steam-overlay-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <div id="gotv-caster-vol">
+                        <span>GOTV Caster Volume</span>
+                        <br>
+                        <input type="number" id="gotv-caster-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <div id="adv-audio-processing">
+                        <span class="hovertext" data-hover="Overall Game Volume">Master Volume</span>
+                    </div>
                 </div>
             </form>
         </div><!--div#form-->
     </main>
     <script src="./js/theme.js"></script>
+    <script src="./js/rangeSync.js"></script>
 </body>
 </html>

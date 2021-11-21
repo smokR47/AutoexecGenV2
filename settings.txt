@@ -1,35 +1,35 @@
 ## Audio & Music
 # Audio
-- Master Volume
-- Music in Stean Overlay
-- GOTV Caster Volume
-- Advanced 3D Audio Processing
-- Enable Voice
-- VOIP VolumeVOIP Positional
-- Play Audio when in Background
+- Master Volume                     0 - 100
+- Music in Steam Overlay            0 - 100
+- GOTV Caster Volume                0 - 100
+- Advanced 3D Audio Processing      Yes / No
+- VOIP Volume                       0 - 100
+- VOIP Positional                   Yes / No
+- Play Audio when in Background     Yes / No
 # Music
-- Mein Menue Volume
-- Round Start Volume
-- Round End Volume
-- Bomb/Hostage Volume
-- Ten Second Warning Volume
-- Death Camera Volume
-- MVP Volume
-- Mute MVP when players on both teams are alive
-- Danger Zone Music Volume
+- Mein Menue Volume                 0 - 100
+- Round Start Volume                0 - 100
+- Round End Volume                  0 - 100
+- Bomb/Hostage Volume               0 - 100
+- Ten Second Warning Volume         0 - 100
+- Death Camera Volume               0 - 100
+- MVP Volume                        0 - 100
+- Mute MVP when players on both teams are alive     Yes / No
+- Danger Zone Music Volume          0 - 100
 
 ## Game
 # Game
-- Enable Game Instructor Messages
-- Max Accaptable Matchmaking Processing
-- Max Accaptable Game Traffic Bandwidth
-- Community Notification Location
-- Enable Console
+- Enable Game Instructor Messages                   Yes / No
+- Max Accaptable Matchmaking Processing             25 - 350
+- Max Accaptable Game Traffic Bandwidth             Extremly Restricted / Below 384 kbps / Below 512 kbps / Below 768 kbps / Below 1.0 mbps / Up to 1.5 mbps / Up to 2.0 mbps / ... / Unrestricted
+- Community Notification Location                   Top Right / Top Left / Bottom Right / Bottom Left
+- Enable Console                                    Yes / No
 # HUD
-- Friendly Fire Reticle Warning
-- HUD Scale
+- Friendly Fire Reticle Warning                     Always Off / Only on Default Crosshair / Always On
+- HUD Scale                                         0.50 - 0.95
 - HUD Color
-- HUD Background Alpha
+- HUD Background Alpha                              0.00 - 1.00
 - Health / Ammo Style
 - Bomb Hud Position 
 - Mini Scoreboard Position
