@@ -28,7 +28,7 @@
 # HUD
 - Friendly Fire Reticle Warning                     Always Off / Only on Default Crosshair / Always On
 - HUD Scale                                         0.50 - 0.95
-- HUD Color
+- HUD Color                                         Default / White / Light Blue / Blue / Purple / Pink / Red / Orange / Yellow / Green / Aqua / Classic
 - HUD Background Alpha                              0.00 - 1.00
 - Health / Ammo Style
 - Bomb Hud Position 
