@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/donwload-button.css">
     <title>Autoexec Generator</title>
 </head>
 <body>
@@ -29,24 +30,23 @@
         </ul>
     </header>
     <main>
-        <div id="intro">
+        <div id="intro" class="sub-container">
             <h2>Vic0 & Pablit0s Autoexec Generator</h2>
             <p>This site can generate you an CS:GO autoexec.cfg with all settings you need.</p> 
             <p>Including most of the settings in CS:GOs settings menu but also a lot custom settings not available in the settings menu like toggle binds and double assignments.</p>
             <p>You can just go through all settings and once you have all set to your preference you can generate and download your autoexec.cfg.</p>
         </div>
-        <hr>
         <div id="form">
-            <form action="" id="execForm">
-                <div id="audio-music">
-                    <div class="designwrap">
-                        <h1 class="sub-title-i">I</h1>
-                       <h1 class="sub-title">Audio & Music</h1>
+            <form action="none" id="execForm">
+                <div id="audio-music" class="sub-container">
+                    <div class="sub-title-wrap">
+                       <h2 class="sub-title">Audio & Music</h2>
                      </div>  
                     <br>
                     <h3>Audio</h3>
+                    <hr>
                     <div id="master-vol">
-                        Master Volume
+                        <h4>Master Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="master-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -54,7 +54,7 @@
                     </div>
                     <hr>
                     <div id="music-in-steam-overlay">
-                        <span>Music in Steam Overlay</span>
+                        <span><h4>Music in Steam Overlay</h4></span>
                         <br>
                         <input type="number" class="number-input" id="music-in-steam-overlay-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -62,7 +62,7 @@
                     </div>
                     <hr>
                     <div id="gotv-caster-vol">
-                        <span>GOTV Caster Volume</span>
+                        <span><h4>GOTV Caster Volume</h4></span>
                         <br>
                         <input type="number" class="number-input" id="gotv-caster-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -70,7 +70,7 @@
                     </div>
                     <hr>
                     <div id="adv-audio-processing">
-                        <label for="adv-audio-processing-dropdown"><span class="hovertext" data-hover="3D audio processing also called Sound Occlusion is a technology in csgo that allows you to pinpoint a sound coming from a certain direction">Advanced 3D Audio Processing</span></label>
+                        <label for="adv-audio-processing-dropdown"><span class="hovertext" data-hover="3D audio processing also called Sound Occlusion is a technology in csgo that allows you to pinpoint a sound coming from a certain direction"><h4>Advanced 3D Audio Processing</h4></span></label>
                         <select name="adv-audio-processing-dropdown" id="adv-audio-processing-val">
                             <option value="yes" selected>Yes</option>
                             <option value="no">No</option>
@@ -78,7 +78,7 @@
                     </div>
                     <hr>
                     <div id="voip-vol">
-                        <span class="hovertext" data-hover="Volume of ingame player voice chat (VOIP means Voice Over IP)">VOIP Volume</span>
+                        <span class="hovertext" data-hover="Volume of ingame player voice chat (VOIP means Voice Over IP)"><h4>VOIP Volume</h4></span>
                         <br>
                         <input type="number" class="number-input" id="voip-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -86,7 +86,7 @@
                     </div>
                     <hr>
                     <div id="voip-positional">
-                        <label for="voip-positional-dropdown"><span class="hovertext" data-hover="Hear ingame voice chat from the position a player is standing">VOIP Positional</span></label>
+                        <label for="voip-positional-dropdown"><span class="hovertext" data-hover="Hear ingame voice chat from the position a player is standing"><h4>VOIP Positional</h4></span></label>
                         <select name="voip-positional-dropdown" id="voip-positional-val">
                             <option value="yes">Yes</option>
                             <option value="no" selected>No</option>
@@ -94,16 +94,18 @@
                     </div>
                     <hr>
                     <div id="audio-in-background">
-                        <label for="audio-in-background-dropdown">Play Audio when in Background</label>
+                        <label for="audio-in-background-dropdown"><h4>Play Audio when in Background</h4></label>
                         <select name="audio-in-background-dropdown" id="audio-in-background-val">
                             <option value="yes">Yes</option>
                             <option value="no" selected>No</option>
                         </select> 
+                        <hr>
                     </div>
                     <br>
                     <h3>Music</h3>
+                    <hr>
                     <div id="main-menu-vol">
-                        Main Menu Music Volume
+                        <h4>Main Menu Music Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="main-menu-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -111,7 +113,7 @@
                     </div>
                     <hr>
                     <div id="round-start-vol">
-                        Round Start Volume
+                        <h4>Round Start Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="round-start-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -119,7 +121,7 @@
                     </div>
                     <hr>
                     <div id="round-end-vol">
-                        Round End Volume
+                        <h4>Round End Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="round-end-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -127,7 +129,7 @@
                     </div>
                     <hr>
                     <div id="bomb-vol">
-                        Bomb / Hostage Volume
+                        <h4>Bomb / Hostage Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="bomb-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -135,7 +137,7 @@
                     </div>
                     <hr>
                     <div id="ten-sec-warning-vol">
-                        Ten Seconds Warning Volume
+                        <h4>Ten Seconds Warning Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="ten-sec-warning-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -143,7 +145,7 @@
                     </div>
                     <hr>
                     <div id="death-cam-vol">
-                        Death Camera Music Volume
+                        <h4>Death Camera Music Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="death-cam-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -151,7 +153,7 @@
                     </div>
                     <hr>
                     <div id="mvp-vol">
-                        MVP Music Volume
+                        <h4>MVP Music Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="mvp-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
@@ -159,7 +161,7 @@
                     </div>
                     <hr>
                     <div id="audio-in-background">
-                        <label for="audio-in-background-dropdown">Mute MVP Music when players on both teams are alive</label>
+                        <label for="audio-in-background-dropdown"><h4>Mute MVP Music when players on both teams are alive</h4></label>
                         <select name="audio-in-background-dropdown" id="audio-in-background-val">
                             <option value="yes" selected>Yes</option>
                             <option value="no">No</option>
@@ -167,19 +169,22 @@
                     </div>
                     <hr>
                     <div id="dz-music-vol">
-                        Danger Zone Music Volume
+                        <h4>Danger Zone Music Volume</h4>
                         <br>
                         <input type="number" class="number-input" id="dz-music-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
                         <input type="range" class="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
                 </div><!--div#audio-music-->
-                <div id="game">
-                    <h2>Game & Visuals</h2>
+                <div id="game" class="sub-container">
+                    <div class="sub-title-wrap">
+                        <h2 class="sub-title">Game & Visuals</h2>
+                    </div>
                     <br>
                     <h3>Game</h3>
+                    <hr>
                     <div id="game-instructor">
-                        <label for="game-instructor-dropdown">Mute MVP Music when players on both teams are alive</label>
+                        <label for="game-instructor-dropdown"><h4>Mute MVP Music when players on both teams are alive</h4></label>
                         <select name="game-instructor-dropdown" id="game-instructor-val">
                             <option value="yes">Yes</option>
                             <option value="no" selected>No</option>
@@ -187,15 +192,15 @@
                     </div>
                     <hr>
                     <div id="max-ping">
-                        Max Accaptable Matchmaking Ping
+                        <h4>Max Accaptable Matchmaking Ping</h4>
                         <br>
-                        <input type="number" id="max-ping-val" min="25" max="350" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <input class="number-input" type="number" id="max-ping-val" min="25" max="350" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
-                        <input type="range" min="25" max="350" value="50" oninput="rangeSync(this)">
+                        <input class="range" type="range" min="25" max="350" value="50" oninput="rangeSync(this)">
                     </div>
                     <hr>
                     <div id="max-bandwidth">
-                        <label for="max-bandwidth-dropdown">Max Accaptable Game Traffic Bandwidth</label>
+                        <label for="max-bandwidth-dropdown"><h4>Max Accaptable Game Traffic Bandwidth</h4></label>
                         <select name="max-bandwidth-dropdown" id="max-bandwidth-val">
                             <option value="1" selected>Extremly Restricted</option>
                             <option value="2">Below 384 kbps</option>
@@ -212,7 +217,7 @@
                     </div>
                     <hr>
                     <div id="notification-loc">
-                        <label for="notification-loc-dropdown">Community Notification Location</label>
+                        <label for="notification-loc-dropdown"><h4>Community Notification Location</h4></label>
                         <select name="notification-loc-dropdown" id="notification-loc-val">
                             <option value="1" selected>Top Right</option>
                             <option value="2">Top Left</option>
@@ -222,7 +227,7 @@
                     </div>
                     <hr>
                     <div id="enable-console">
-                        <label for="enable-console-dropdown">Enable Developer Console</label>
+                        <label for="enable-console-dropdown"><h4>Enable Developer Console</h4></label>
                         <select name="enable-console-dropdown" id="enable-console-val">
                             <option value="yes" selected>Yes</option>
                             <option value="no">No</option>
@@ -231,11 +236,12 @@
                 </div><!--div#game-->
             </form>
         </div><!--div#form-->
-        <div id="generate">
-            <button id="generate-button">Generate</button>
+        <div id="generate" class="download-sub-container">
+            <p><button id="generate-button" onclick="generate();">Generate</button><button id="download-button" class="buttonDownload">Download</button></p>
             <textarea name="exec-text" id="exec-output" cols="30" rows="0" readonly></textarea>
         </div>
     </main>
+    <script src="./js/index.js"></script>
     <script src="./js/theme.js"></script>
     <script src="./js/rangeSync.js"></script>
 </body>

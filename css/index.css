@@ -7,6 +7,7 @@
     --contrastColor: #66c0f4;
     --borderColor: #7289da;
     --secondaryBackground: #1d3357;
+    --secondaryContrast: #f49666;
 }
 
 :root.light {
@@ -173,6 +174,21 @@ button:hover {
 
   
 /* end navbar / header */
+h3 {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: var(--secondaryContrast);
+  -webkit-text-stroke: .02em black;
+  text-shadow: .04em .04em .04em rgba(0,0,0,.4);
+}
+
+h4 {
+    margin-top: 1rem;
+    color: white;
+    font-size: 2rem;
+}
+
 body {
   text-align: center;
   background-color: var(--backgroundColor);
@@ -199,47 +215,11 @@ main.h2 {
     margin: 0 auto;
 }
 
-.designwrap {
+.sub-title-wrap {
   width: 100%;
 }
 
-h1.sub-title-i {
-  font-family:'Fjalla One', sans-serif;
-  font-size:7em;
-  color: #ff3643;
-  margin: 0 -37px 0 0;
-  padding: 0;
-  letter-spacing: 3px;
-  font-weight: 500;
-  transition: all ease-in .2s;
-  -webkit-text-stroke: 1px rgba(238,238,238,.2); 
-  display:inline;
-  opacity: 0;
-  text-shadow: 
-    1px 1px 0 rgba(23,23,23,1),
-    2px 2px 0 rgba(23,23,23,0.9),
-    3px 3px 0 rgba(23,23,23,0.8),
-    4px 4px 0 rgba(23,23,23,0.7),
-    5px 5px 0 rgba(23,23,23,0.6),
-    6px 6px 0 rgba(23,23,23,0.5),
-    7px 7px 0 rgba(23,23,23,0.4),
-    8px 8px 0 rgba(23,23,23,0.3),
-    9px 9px 0 rgba(23,23,23,0.2),
-    10px 10px 0 rgba(23,23,23,0.1),
-    11px 11px 0 rgba(23,23,23,0.09),
-    12px 12px 0 rgba(23,23,23,0.08),
-    13px 13px 0 rgba(23,23,23,0.07),
-    14px 14px 0 rgba(23,23,23,0.06),
-    15px 15px 0 rgba(23,23,23,0.05),
-    16px 16px 0 rgba(23,23,23,0.04),
-    17px 17px 0 rgba(23,23,23,0.03),
-    18px 18px 0 rgba(23,23,23,0.02),
-    19px 19px 0 rgba(23,23,23,0.01),
-    20px 20px 0 rgba(23,23,23,0.0),
-    -15px 20px 10px rgba(23,23,23,0.05);
-}
-
-h1.sub-title {
+h2.sub-title {
   font-family:'Fjalla One', sans-serif;
   font-size:5em;
   color: var(--contrastColor);
@@ -274,7 +254,7 @@ h1.sub-title {
     -15px 20px 10px rgba(23,23,23,0.05);
 }
 
-h1.sub-title:hover {
+.sub-title:hover {
   1px 1px 0 rgba(23,23,23,1),
   3px 3px 0 rgba(23,23,23,0.9),
   5px 5px 0 rgba(23,23,23,0.8),
@@ -298,7 +278,17 @@ h1.sub-title:hover {
   opacity: 1;
 }
 
-#audio-music {
+.sub-container {
+  margin: 2rem;
+  padding: 2rem;
+  background-color: var(--secondaryBackground);
+  border-radius: 1rem;
+  border-color: var(--borderColor);
+}
+
+.download-sub-container {
+  display: block;
+  margin: 0 auto;
   padding: 2rem;
   background-color: var(--secondaryBackground);
   border-radius: 1rem;
@@ -315,7 +305,7 @@ h1.sub-title:hover {
     border-color:var(--contrastColor) ;
     font-weight: 400;
     padding: 0.75rem;
-    margin: 0.5rem;
+    margin: 2rem auto;
     box-sizing: border-box;
     border-radius: 15px;
     -moz-appearance: textfield;
