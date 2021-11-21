@@ -183,7 +183,7 @@ body {
     background-image: var(--backGroundImage);
 }
 
-h1.code {
+h1.headline {
   font-family:'Fjalla One',sans-serif;
   font-size:7em;
   color:var(--secondaryContrast);
@@ -191,7 +191,7 @@ h1.code {
   padding:0;
   letter-spacing:3px;
   font-weight:500;
-  text-transform:uppercase;
+  
   transition:all ease-in .2s;
   text-shadow: 
     1px 1px 0 rgba(238,238,238,1),
@@ -218,7 +218,7 @@ h1.code {
   
 }
 
-h1.code:hover {
+h1.headline:hover {
   text-shadow:
     1px 1px 0 rgba(238,238,238,1),
     2px 2px 0 rgba(238,238,238,0.9),
@@ -246,12 +246,17 @@ h1.code:hover {
 
 #hide1 {opacity: 0; transition: all .2s ease-in-out;}
 
-h1.code:hover >#hide1
+h1.headline:hover >#hide1
 {opacity: 1;}
 
-#hide2 {opacity: 0; transition: all .2s ease-in-out; margin-left: 8px;}
+#hide2 {
+  opacity: 0; 
+  transition: all .2s ease-in-out; 
+  margin-left: 8px;
+  margin-bottom: 10rem;
+}
 
-h1.code:hover >#hide2
+h1.headline:hover >#hide2
 {opacity: 1;}
 
 h3 {
@@ -269,6 +274,47 @@ h4 {
     font-size: 2rem;
 }
 
+.intro-text{
+  display:block;
+  background: var(--navbarBackgroundColor);
+  padding: 15px 20px 15px 45px;
+  margin: 1.3rem;
+  position: relative;
+  
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--textColor);
+  text-align: justify;
+  
+  /*Borders - (Optional)*/
+  border-left: 15px solid var(--secondaryContrast);
+  border-radius: 1rem;
+  
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px var(--borderColor);
+  -webkit-box-shadow: 2px 2px 15px var(--borderColor);
+  box-shadow: 2px 2px 15px var(--borderColor);
+}
+
+.intro-text::before{
+  /*Font*/
+  font-family: Georgia, serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: var(--contrastColor);
+  
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top:5px;
+}
+
+.intro-text::after{
+  /*Reset to make sure*/
+  content: "";
+}
 
 hr{
   height: 1px;
@@ -281,6 +327,7 @@ main.h2 {
     margin: 3em;
     text-align: center;
 }
+
 .form {
     margin: 0 auto;
 }
@@ -349,18 +396,24 @@ h2.sub-title {
 }
 
 p {
-  font-size: 1.3rem;
+    font-size: 1.3rem;
 }
 
 .sub-container {
-  color: var(--textColor);
-  display: block;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: var(--secondaryBackground);
-  border-radius: 1rem;
-  border-color: var(--borderColor);
+    color: var(--textColor);
+    display: block;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--secondaryBackground);
+    border-radius: 1rem;
+    border-color: var(--borderColor);
   
+}
+
+p.by{
+    flex-direction: column;
+    font-size: 1.3rem;
+    text-align: right;
 }
 
 .download-sub-container {
@@ -438,6 +491,10 @@ p {
     padding: 0.313rem 0.625rem;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+#surround-select-box {
+    width: 25rem;
 }
 
 select option {
