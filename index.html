@@ -75,11 +75,12 @@
                     <hr>
                     <div id="surround-sound">
                         <label for="surround-sound-dropdown"><span class="hovertext" data-hover="Set the type of Audio Output you have. Eg. 5.1 Surround or Stereo"><h4>Audio Output Configuration</h4></span></label>
-                        <select class="select-box" id="surround-select-box" name="surround-sound-dropdown" id="surround-sound-val">
+                        <select class="select-box large-select-box" name="surround-sound-dropdown" id="surround-sound-val">
+                            <option value="0" selected>Auto</option>
                             <option value="1">Stereo Headphones</option>
                             <option value="2">Stereo Speakers</option>
                             <option value="3">Quad Surround Sound</option>
-                            <option value="4" selected>5.1 Surround Sound</option>
+                            <option value="4">5.1 Surround Sound</option>
                         </select>
                     </div>
                     <hr>
@@ -198,8 +199,8 @@
                     <h3>Game</h3>
                     <hr>
                     <div id="game-instructor">
-                        <label for="game-instructor-dropdown"><h4>Mute MVP Music when players on both teams are alive</h4></label>
-                        <select name="game-instructor-dropdown" id="game-instructor-val">
+                        <label for="game-instructor-dropdown"><h4>Enable Game Instructor</h4></label>
+                        <select class="select-box" name="game-instructor-dropdown" id="game-instructor-val">
                             <option value="yes">Yes</option>
                             <option value="no" selected>No</option>
                         </select>
@@ -214,7 +215,7 @@
                     </div>
                     <hr>
                     <div id="max-bandwidth">
-                        <label for="max-bandwidth-dropdown"><h4>Max Accaptable Game Traffic Bandwidth</h4></label>
+                        <label for="max-bandwidth-dropdown large-select-box"><h4>Max Accaptable Game Traffic Bandwidth</h4></label>
                         <select class="select-box" name="max-bandwidth-dropdown" id="max-bandwidth-val">
                             <option value="1" selected>Extremly Restricted</option>
                             <option value="2">Below 384 kbps</option>

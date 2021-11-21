@@ -16,6 +16,9 @@ function generate() {
     console.log(surrSndVal)
     var surroundSoundVal = "-1"
     switch (surrSndVal) {
+        case "0":
+            surroundSoundVal = "-1";
+            break;
         case "1":
             surroundSoundVal = "1";
             break;
@@ -57,6 +60,11 @@ function generate() {
         exec += "snd_mute_mvp_music_live_players 0\n";
     }
     exec += "snd_dzmusic_volume " + (form["dz-music-vol-val"].value / 100).toString() + "\n";
+    if (form["game-instructor-val"].value === "yes") {
+        exec += "gameinstructor_enable 1\n";
+    } else {
+        exec += "gameinstructor_enable 0\n";
+    }
     
     console.log(exec)
 }

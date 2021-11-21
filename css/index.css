@@ -493,7 +493,7 @@ p.by{
     white-space: nowrap;
 }
 
-#surround-select-box {
+.large-select-box {
     width: 25rem;
 }
 
