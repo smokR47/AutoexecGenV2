@@ -494,7 +494,28 @@ p.by{
 }
 
 .large-select-box {
-    width: 25rem;
+  text-align: center;
+  color: var(--textColor);
+  height: 3rem;
+  font-size: 2.0rem;
+  border: solid 1px var(--borderColor);
+  padding: 15px 20px;
+  border-radius: 10px;  
+  width: 25rem;  
+  -webkit-appearance: button;
+
+  -webkit-padding-end: 1.25rem;
+  -webkit-padding-start: 0.125rem;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background-position: 97% center;
+  background-repeat: no-repeat;  
+  background-color: var(--navbarBackgroundColor);
+  margin: 1.25rem;
+  overflow: hidden;
+  padding: 0.313rem 0.625rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 select option {
