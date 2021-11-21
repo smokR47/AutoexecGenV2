@@ -40,14 +40,16 @@
             <form action="" id="execForm">
                 <div id="audio-music">
                     <h2>Audio & Music</h2>
+                    <br>
                     <h3>Audio</h3>
                     <div id="master-vol">
-                        <span class="hovertext" data-hover="Overall Game Volume">Master Volume</span>
+                        Master Volume
                         <br>
                         <input type="number" id="master-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
                         <br>
                         <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
+                    <hr>
                     <div id="music-in-steam-overlay">
                         <span>Music in Steam Overlay</span>
                         <br>
@@ -55,6 +57,7 @@
                         <br>
                         <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
+                    <hr>
                     <div id="gotv-caster-vol">
                         <span>GOTV Caster Volume</span>
                         <br>
@@ -62,10 +65,167 @@
                         <br>
                         <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
                     </div>
+                    <hr>
                     <div id="adv-audio-processing">
-                        <span class="hovertext" data-hover="Overall Game Volume">Master Volume</span>
+                        <label for="adv-audio-processing-dropdown"><span class="hovertext" data-hover="3D audio processing also called Sound Occlusion is a technology in csgo that allows you to pinpoint a sound coming from a certain direction">Advanced 3D Audio Processing</span></label>
+                        <select name="adv-audio-processing-dropdown" id="adv-audio-processing-val">
+                            <option value="yes" selected>Yes</option>
+                            <option value="no">No</option>
+                        </select> 
                     </div>
-                </div>
+                    <hr>
+                    <div id="voip-vol">
+                        <span class="hovertext" data-hover="Volume of ingame player voice chat (VOIP means Voice Over IP)">VOIP Volume</span>
+                        <br>
+                        <input type="number" id="voip-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="voip-positional">
+                        <label for="voip-positional-dropdown"><span class="hovertext" data-hover="Hear ingame voice chat from the position a player is standing">VOIP Positional</span></label>
+                        <select name="voip-positional-dropdown" id="voip-positional-val">
+                            <option value="yes">Yes</option>
+                            <option value="no" selected>No</option>
+                        </select> 
+                    </div>
+                    <hr>
+                    <div id="audio-in-background">
+                        <label for="audio-in-background-dropdown">Play Audio when in Background</label>
+                        <select name="audio-in-background-dropdown" id="audio-in-background-val">
+                            <option value="yes">Yes</option>
+                            <option value="no" selected>No</option>
+                        </select> 
+                    </div>
+                    <br>
+                    <h3>Music</h3>
+                    <div id="main-menu-vol">
+                        Main Menu Music Volume
+                        <br>
+                        <input type="number" id="main-menu-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="round-start-vol">
+                        Round Start Volume
+                        <br>
+                        <input type="number" id="round-start-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="round-end-vol">
+                        Round End Volume
+                        <br>
+                        <input type="number" id="round-end-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="bomb-vol">
+                        Bomb / Hostage Volume
+                        <br>
+                        <input type="number" id="bomb-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="ten-sec-warning-vol">
+                        Ten Seconds Warning Volume
+                        <br>
+                        <input type="number" id="ten-sec-warning-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="death-cam-vol">
+                        Death Camera Music Volume
+                        <br>
+                        <input type="number" id="death-cam-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="mvp-vol">
+                        MVP Music Volume
+                        <br>
+                        <input type="number" id="mvp-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="audio-in-background">
+                        <label for="audio-in-background-dropdown">Mute MVP Music when players on both teams are alive</label>
+                        <select name="audio-in-background-dropdown" id="audio-in-background-val">
+                            <option value="yes" selected>Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="dz-music-vol">
+                        Danger Zone Music Volume
+                        <br>
+                        <input type="number" id="dz-music-vol-val" min="0" max="100" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="0" max="100" value="50" oninput="rangeSync(this)">
+                    </div>
+                </div><!--div#audio-music-->
+                <div id="game">
+                    <h2>Game & Visuals</h2>
+                    <br>
+                    <h3>Game</h3>
+                    <div id="game-instructor">
+                        <label for="game-instructor-dropdown">Mute MVP Music when players on both teams are alive</label>
+                        <select name="game-instructor-dropdown" id="game-instructor-val">
+                            <option value="yes">Yes</option>
+                            <option value="no" selected>No</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="max-ping">
+                        Max Accaptable Matchmaking Ping
+                        <br>
+                        <input type="number" id="max-ping-val" min="25" max="350" value="50" onclick="this.select();" oninput="rangeSync(this)"/>
+                        <br>
+                        <input type="range" min="25" max="350" value="50" oninput="rangeSync(this)">
+                    </div>
+                    <hr>
+                    <div id="max-bandwidth">
+                        <label for="max-bandwidth-dropdown">Max Accaptable Game Traffic Bandwidth</label>
+                        <select name="max-bandwidth-dropdown" id="max-bandwidth-val">
+                            <option value="1" selected>Extremly Restricted</option>
+                            <option value="2">Below 384 kbps</option>
+                            <option value="3">Below 512 kbps</option>
+                            <option value="4">Below 768 kbps</option>
+                            <option value="5">Below 1.0 Mbps</option>
+                            <option value="6">Up to 1.5 Mbps</option>
+                            <option value="7">Up to 2.0</option>
+                            <option value="8">Up to 2.5 Mbps</option>
+                            <option value="9">3 Mbps</option>
+                            <option value="10">4 Mbps</option>
+                            <option value="11">Unrestricted</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="notification-loc">
+                        <label for="notification-loc-dropdown">Community Notification Location</label>
+                        <select name="notification-loc-dropdown" id="notification-loc-val">
+                            <option value="1" selected>Top Right</option>
+                            <option value="2">Top Left</option>
+                            <option value="3">Bottom Right</option>
+                            <option value="4">Bottom Left</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="enable-console">
+                        <label for="enable-console-dropdown">Enable Developer Console</label>
+                        <select name="enable-console-dropdown" id="enable-console-val">
+                            <option value="yes" selected>Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                </div><!--div#game-->
             </form>
         </div><!--div#form-->
     </main>
