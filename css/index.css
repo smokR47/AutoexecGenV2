@@ -29,7 +29,7 @@
     font-family: "montserrat",sans-serif;
 }
 
-/* start navbar / header */
+/* navbar / header */
 header {
   height: 6.25rem;
   background-color: var(--navbarBackgroundColor);
@@ -168,7 +168,6 @@ header button:hover {
         right: 0;
     }
 }
-/* end navbar / header */
 
 /* sidemenu */
 #sidebarMenu {
@@ -176,19 +175,20 @@ header button:hover {
   position: fixed;
   left: 0;
   width: 250px;
-  margin-top: 60px;
+  margin-top: 6.5rem;
   transform: translateX(-250px);
   transition: transform 250ms ease-in-out;
-  background: #FFF;
+  background: var(--navbarBackgroundColor);
+  border-top-right-radius: 1rem;
 }
 .sidebarMenuInner{
   margin:0;
   padding:0;
-  border-top: 1px solid rgba(255, 255, 255, 0.10);
+  
 }
 .sidebarMenuInner li{
   list-style: none;
-  color: #000;
+  color: var(--navBarTextColor);
   text-transform: uppercase;
   font-weight: bold;
   padding: 20px;
@@ -198,10 +198,10 @@ header button:hover {
 .sidebarMenuInner li span{
   display: block;
   font-size: 14px;
-  color: #000;
+  color: var(--navBarTextColor);
 }
 .sidebarMenuInner li a{
-  color: #000;
+  color: var(--navBarTextColor);
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
@@ -274,6 +274,8 @@ input[type=checkbox]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
   transform: rotate(-135deg);
   margin-top: -9px;
 }
+
+/* body */
 
 body {
     margin-left: 5rem;
@@ -462,7 +464,7 @@ h2.sub-title {
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
   
   .sub-container {

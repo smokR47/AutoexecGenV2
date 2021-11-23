@@ -19,7 +19,7 @@
             <label for="chk" class="show-menu-button">
                 <i class="fas fa-ellipsis-h"></i>
             </label>
-            
+
             <ul class="menu">
                 <a href="#">AUDIO</a>
                 <a href="#">GAME</a>
@@ -31,25 +31,25 @@
                     <i class="fas fa-times"></i>
                 </label>
             </ul>
+            <!-- Sidebar -->
+            <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+            <label for="openSidebarMenu" class="sidebarIconToggle">
+                <div class="spinner diagonal part-1"></div>
+                <div class="spinner horizontal"></div>
+                <div class="spinner diagonal part-2"></div>
+            </label>
+            <div id="sidebarMenu">
+                <ul class="sidebarMenuInner">
+                    <li>Menu<span>Hire Us</span></li>
+                    <li><a href="https://vanila.io" target="_blank">HOME</a></li>
+                    <li><a href="#" target="_blank">Desarrollo Web</a></li>
+                    <li><a href="#" target="_blank">Contactanos</a></li>
+                    <li><a href="#" target="_blank">Clientes</a></li>
+                </ul>
+            </div>
         </nav>
-        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
-        <label for="openSidebarMenu" class="sidebarIconToggle">
-            <div class="spinner diagonal part-1"></div>
-            <div class="spinner horizontal"></div>
-            <div class="spinner diagonal part-2"></div>
-        </label>
-        <div id="sidebarMenu">
-            <ul class="sidebarMenuInner">
-            <li>Menu<span>Hire Us</span></li>
-            <li><a href="https://vanila.io" target="_blank">HOME</a></li>
-            <li><a href="#" target="_blank">Desarrollo Web</a></li>
-            <li><a href="#" target="_blank">Contactanos</a></li>
-            <li><a href="#" target="_blank">Clientes</a></li>
-            </ul>
-        </div>
     </header>
     <main>
-        <!-- Sidebar -->
         <div id='center' class="main center">
         </div>
         <div id="intro" class="sub-container">
@@ -373,12 +373,12 @@
                     <div id="steam-group-id">
                         <label for="steam-group-id-text">
                             <h4>Steam Group Clan Tag ID</h4>
-                            <p>You can get the steam group id for the currently set group by running <code>cl_clanid</code> in the console. "0" means no group.</p>
+                            <br>
+                            <p>You can get the steam group id <br>for the currently set group by running <code>cl_clanid</code> in the console.<br> "0" means no group.</p>
                         </label>
-                        <label for="set-steam-group-check">Set steam group in autoexec</label>
-                        <input type="checkbox" name="set-steam-group-check" id="set-steam-group-val">
-                        <br>
-                        <input type="number" value="0" id="steam-group-id-val">
+                        <label for="set-steam-group-check"><p>Set steam group in autoexec</p></label>
+                        <input type="checkbox"  name="set-steam-group-check" id="set-steam-group-val">
+                        <input type="number" class="number-input" value="0" id="steam-group-id-val">
                     </div>
                 </div><!--div#game-->
             </form>
