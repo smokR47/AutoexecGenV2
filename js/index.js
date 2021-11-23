@@ -1,3 +1,14 @@
+function checkAopacityOpacity (e) {
+    var element = document.getElementById(e.id)
+    if (element.checked) {
+        console.log(element.checked);
+        element.style.opacity = 0;
+    }
+    
+    return
+
+}
+
 function generate() {
     var exec = "echo Loading vic0s & pablit0s generated autoexec.cfg\n";
     var form = document.forms[0]; // select the exec form

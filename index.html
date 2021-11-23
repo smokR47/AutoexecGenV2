@@ -12,32 +12,54 @@
 </head>
 <body>
     <header>
-        <h2 class="logo">AUTO EXEC GENERATOR</h2>
-        <input type="checkbox" id="chk">
-        <label for="chk" class="show-menu-button">
-            <i class="fas fa-ellipsis-h"></i>
-        </label>
-
-        <ul class="menu">
-            <a href="#">AUDIO</a>
-            <a href="#">GAME</a>
-            <a href="#">MOUSE</a>
-            <a href="#">BINDS</a>
-            <a href="#">OTHERS</a>
-            <button class="switchTheme" id="switchTheme" onclick="toggleTheme()">dark Mode</button>
-            <label for="chk" class="hide-menu-button">
-                <i class="fas fa-times"></i>
+        <!-- Navbar -->
+        <nav>
+            <h2 class="logo">AUTO EXEC GENERATOR</h2>
+            <input type="checkbox" id="chk">
+            <label for="chk" class="show-menu-button">
+                <i class="fas fa-ellipsis-h"></i>
             </label>
-        </ul>
+            
+            <ul class="menu">
+                <a href="#">AUDIO</a>
+                <a href="#">GAME</a>
+                <a href="#">MOUSE</a>
+                <a href="#">BINDS</a>
+                <a href="#">OTHERS</a>
+                <button class="switchTheme" id="switchTheme" onclick="toggleTheme()">dark Mode</button>
+                <label for="chk" class="hide-menu-button">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </nav>
+        <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+        <label for="openSidebarMenu" class="sidebarIconToggle">
+            <div class="spinner diagonal part-1"></div>
+            <div class="spinner horizontal"></div>
+            <div class="spinner diagonal part-2"></div>
+        </label>
+        <div id="sidebarMenu">
+            <ul class="sidebarMenuInner">
+            <li>Menu<span>Hire Us</span></li>
+            <li><a href="https://vanila.io" target="_blank">HOME</a></li>
+            <li><a href="#" target="_blank">Desarrollo Web</a></li>
+            <li><a href="#" target="_blank">Contactanos</a></li>
+            <li><a href="#" target="_blank">Clientes</a></li>
+            </ul>
+        </div>
     </header>
     <main>
+        <!-- Sidebar -->
+        <div id='center' class="main center">
+        </div>
         <div id="intro" class="sub-container">
+            <!-- Intro content -->
             <h1 class="headline"><span id="hide1">ッ</span>AUTOEXEC GENERATOR<span id="hide2">ᵛ‧²</span> </h1>
             <p class="by"><em id="I"></em><em> by Vic0 & Pablit0</em></p>
             <div class="accordion-wrapper">
               <div class="accordion">
-                <input type="radio" name="radio-a" id="check1">
-                <label class="accordion-label" for="check1">what?</label>
+                <input type="radio" name="radio-a"" id="check1" onclick="checkAopacityOpacity(this)">
+                <label class="accordion-label"  for="check1">what?</label>
                 <div class="accordion-content">
                         <p>This site can generate you an CS:GO autoexec.cfg with all settings you need. <br>
                         Including most of the settings in CS:GOs settings menu but also a lot custom settings not available in the settings menu like toggle binds and double assignments.<br>
@@ -46,14 +68,14 @@
                 </div>
               </div>
               <div class="accordion">
-                <input type="radio" name="radio-a" id="check2">
+                <input type="radio" name="radio-a" id="check2" onclick="checkAopacityOpacity(this)">
                 <label class="accordion-label" for="check2">how?</label>
                 <div class="accordion-content">
                   <p>I hope you are enjoing the video, don't forget to give your feedback in comment section</p>
                 </div>
               </div>
               <div class="accordion">
-                <input type="radio" name="radio-a" id="check3">
+                <input type="radio" name="radio-a" id="check3" onclick="checkAopacityOpacity(this)">
                 <label class="accordion-label" for="check3">about</label>
                 <div class="accordion-content">
                   <p>If you liked then don't forget to subscribe the channel for latest videos. </p>
@@ -62,6 +84,7 @@
             </div>
         </div>
         <div id="form">
+            <!-- Main Content -->
             <form action="none" id="execForm">
                 <div id="audio-music" class="sub-container">
                     <div class="sub-title-wrap">
