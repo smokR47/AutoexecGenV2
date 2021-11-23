@@ -9,6 +9,10 @@ function checkAopacityOpacity (e) {
 
 }
 
+function fillSVG(e) {
+    return
+}
+
 function generate() {
     var exec = "echo Loading vic0s & pablit0s generated autoexec.cfg\n";
     var form = document.forms[0]; // select the exec form

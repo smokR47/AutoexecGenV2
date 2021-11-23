@@ -22,6 +22,8 @@
     --borderColor: #23272a;
 }
 
+@import url(//db.onlinewebfonts.com/c/3750ae4f553135962d46a5e916204fe5?family=GoodTimesW00-Bold);
+
 *,*:before,*:after {
 	  box-sizing: border-box;
     margin: 0;
@@ -42,6 +44,20 @@ nav#top-navbar {
   box-shadow:4px 7px 10px rgba(0,0,0,.4);
 }
 
+.qm-logo h4 {
+    font-family: GoodTimesW00-Bold;
+    font-size: 2.5rem;
+    color: var(--navBarTextColor);
+    line-height: 100px;
+    float: left;
+    transition: 0.4s;
+    cursor: pointer;
+    position: absolute;
+    left: 3.4rem;
+    top: 1.4rem;
+    transform: translate(-50%, -50%);
+}
+
 .logo h4{
   color: var(--navBarTextColor);
   line-height: 100px;
@@ -49,15 +65,26 @@ nav#top-navbar {
   transition: 0.4s;
   cursor: pointer;
   position: absolute;
-  left: 10.5rem;
+  left: 17.5rem;
   top: 1.4rem;
   transform: translate(-50%, -50%);
 }
 
 .logo h4:hover {
-  color: var(--contrastColor);
+  
+  color: var(--secondaryContrast);
+  animation: neon-logo 1.5s ease-in-out infinite alternate;
 }
-
+@keyframes neon-logo {
+  from {
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 20px rgb(0, 0, 0), 0 0 30px rgb(0, 0, 0), 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px rgb(0, 0, 0), 0 0 10px rgb(0, 0, 0), 0 0 15px rgb(0, 0, 0), 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
 #top-navbar ul {
     list-style: none;
     text-align: right;
@@ -84,7 +111,7 @@ nav#top-navbar {
 
 /* sidemenu */
 .nav__cont {
-  margin-top: 4.8rem;
+  margin-top: 4.9rem;
   position: fixed;
   width: 5rem;
   top:0;
@@ -95,6 +122,7 @@ nav#top-navbar {
   transition:width .3s ease;
   cursor:pointer;
   box-shadow:4px 7px 10px rgba(0,0,0,.4);
+  clip-path: inset(0px -15px 0px 0px);
 }
 .nav__cont:hover {
     width: 12.5rem;
@@ -110,47 +138,38 @@ nav#top-navbar {
   color:var(--navBarTextColor);
 }
 .side-nav:first-child {
-    padding-top:1.5rem;
+    padding-top:2.5rem;
 }
 
 .nav__items {
+  padding-right: 5rem;
+  float: center;
   padding-bottom: 3rem;
   font-family: 'roboto';
 }
 .nav__items a {
     position: relative;
     display:block;
-    top:-35px;
+    top:-45px;
     padding-left:5rem;
     padding-right:1rem;
     transition:all .3s ease;
-    margin-left:5rem;
+    margin-left:1rem;
     text-decoration: none;
     color:var(--navBarTextColor);
     font-family: 'roboto';
     font-weight: 100;
-    font-size: 1.35em;
-}
-.nav__items a:hover {
-    content:'';
-    width: 100%;
-    height: 100%;
-    position: relative;
-    display: block;
-    top:0;
-    left:0;
-    border-radius:2px;
-    display: block;
-    background:radial-gradient(circle at 94.02% 88.03%, #54a4ff, transparent 100%);
-    opacity:0;
-    z-index: -100;
+    font-size: 1.5em;
 }
 
 svg.side-nav{
-    width: 3rem;
-    height: 3rem;
-    position: relative;
+  margin-left: 0.4rem;
+    width: 4.5rem;
+    height: 4.5rem;
     cursor:pointer;
+}
+svg.side-nav path {
+    fill: violet;
 }
 @media screen and(min-width:600px) {
   svg.side-nav {
