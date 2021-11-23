@@ -293,7 +293,7 @@
                     </div>
                     <br>
                     <h3>HUD</h3>
-                    <hr>
+                    <hr class="divider">
                     <div id="friendly-warning">
                         <label for="friendly-warning-dropdown"><h4>Friendly Fire Reticle Warning</h4></label>
                         <select class="select-box" name="friendly-warning-dropdown" id="friendly-warning-val">
@@ -351,6 +351,31 @@
                             <option value="0">Show in Inventory</option>
                             <option value="1" selected>Show under Radar</option>
                         </select>
+                    </div>
+                    <hr>
+                    <div id="mini-sc-pos">
+                        <label for="mini-sc-pos-dropdown"><h4>Mini Scoreboard Location</h4></label>
+                        <select class="select-box large-select-box" name="mini-sc-pos-dropdown" id="mini-sc-pos-val">
+                            <option value="0" selected>Top of Screen</option>
+                            <option value="1">Bottom of Screen</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="mini-sc-style">
+                        <label for="mini-sc-style-dropdown"><h4>Mini Scoreboard Style</h4></label>
+                        <select class="select-box large-select-box" name="mini-sc-style-dropdown" id="mini-sc-style-val">
+                            <option value="0" selected>Show Avatars</option>
+                            <option value="1">Just Show Player Count</option>
+                        </select>
+                    </div>
+                    <br>
+                    <h3>Team</h3>
+                    <div id="steam-group-id">
+                        <label for="steam-group-id-text">
+                            <h4>Steam Group Clan Tag ID</h4>
+                            <p>Test</p>
+                        </label>
+                        <input type="text">
                     </div>
                 </div><!--div#game-->
             </form>
