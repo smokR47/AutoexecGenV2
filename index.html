@@ -350,9 +350,11 @@
                     <div id="steam-group-id">
                         <label for="steam-group-id-text">
                             <h4>Steam Group Clan Tag ID</h4>
-                            <p>Test</p>
+                            <p>You can get the steam group id for the currently set group by running <code>cl_clanid</code> in the console. "0" means no group.</p>
                         </label>
-                        <input type="text">
+                        <label for="set-steam-group-check">Set steam group in autoexec</label>
+                        <input type="checkbox" name="set-steam-group-check" id="set-steam-group-val">
+                        <input type="text" value="0" id="steam-group-id-val">
                     </div>
                 </div><!--div#game-->
             </form>
