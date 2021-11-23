@@ -122,6 +122,11 @@ function generate() {
     exec += "cl_hud_background_alpha " + form["hud-alpha-val"].value + "\n";
     exec += "cl_hud_healthammo_style " + form["ammo-style-val"].value + "\n";
     exec += "cl_hud_bomb_under_radar " + form["bomb-pos-val"].value + "\n";
+    exec += "cl_hud_playercount_pos " + form["mini-sc-pos-val"].value + "\n";
+    exec += "cl_hud_playercount_showcount " + form["mini-sc-style-val"].value + "\n";
+
+
+
 
     // fill textarea with the exec and select it
     document.getElementById("exec-output").value = exec;
