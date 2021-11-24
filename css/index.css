@@ -702,7 +702,7 @@ blockquote{
     border-color: var(--borderColor);
 }
 
-/* page scrollbar style */
+/* page scrollbar style (chrome) */
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -717,8 +717,24 @@ blockquote{
   overflow: auto;
 }
 
-/* exec output style */
+/* page scrollbar style (other browsers) */
 
+html {
+  scrollbar-face-color: var(--secondaryContrast); 
+  scrollbar-shadow-color: var(--navbarBackgroundColor); 
+  scrollbar-highlight-color: var(--navbarBackgroundColor);
+}
+/* Only FireFox */
+html {
+  scrollbar-color: var(--secondaryContrast) var(--navbarBackgroundColor);
+}
+/* View Scrollbar */
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+/* exec output style */
 #text-container {
     color: var(--textColor);
     align-items: right;  
