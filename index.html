@@ -279,6 +279,7 @@
                         <h2 class="sub-title">Game & Visuals</h2>
                     </div>
                     <br>
+                    <hr class="divider">
                     <h3>Game</h3>
                     <hr class="divider">
                     <div id="game-instructor">
@@ -332,6 +333,7 @@
                         </select>
                     </div>
                     <br>
+                    <hr class="divider">
                     <h3>HUD</h3>
                     <hr class="divider">
                     <div id="friendly-warning">
@@ -409,7 +411,9 @@
                         </select>
                     </div>
                     <br>
+                    <hr class="divider">
                     <h3>Team</h3>
+                    <hr class="divider">
                     <div id="steam-group-id">
                         <label for="steam-group-id-text">
                             <h4>Steam Group Clan Tag ID</h4>
@@ -417,7 +421,11 @@
                             <p>You can get the steam group id for the currently set group by running<br> <code>cl_clanid</code> in the console. "0" means no group.</p>
                         </label>
                         <label for="set-steam-group-check"><p>Set steam group in autoexec</p></label>
-                        <input type="checkbox"  name="set-steam-group-check" id="set-steam-group-val">
+                        <div class="toggle-button toggle-button--tuuli">
+                            <input id="steam-group-id-checkbox" type="checkbox">
+                            <label for="steam-group-id-checkbox"></label>
+                            <div class="toggle-button__icon"></div>
+                        </div>
                         <input type="number" class="number-input" value="0" id="steam-group-id-val" onclick="this.select();">
                     </div>
                 </div><!--div#game-->

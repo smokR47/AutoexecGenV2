@@ -35,6 +35,7 @@
 /* navbar / header */
 
 nav#top-navbar {
+  z-index: 100;
 	background: var(--navbarBackgroundColor);
 	position: sticky;
   top: 0;
@@ -426,10 +427,103 @@ p {
     -moz-appearance: textfield;
   }
 
+/* simple checkbox */
+.toggle-button {
+  margin-top: 1.5rem;
+    position: relative;
+    display: inline-block;
+    color: var(--textColor);  
+}
+
+.toggle-button label {
+      display: inline-block;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-align: left; 
+}
+
+.toggle-button input {
+    display: none;
+}
+.toggle-button__icon {
+      cursor: pointer;
+      pointer-events: none; }
+      .toggle-button__icon:before, .toggle-button__icon:after {
+        content: "";
+        position: absolute;
+        top: 45%;
+        left: 35%;
+        transition: 0.2s ease-out; }
+
   .number-input::-webkit-inner-spin-button, 
   .number-input::-webkit-outer-spin-button { 
-    -webkit-appearance: none; 
-  margin: 0; 
+    -webkit-appearance: none;
+    background: var(--contrastColor) url(https://cdn-icons-png.flaticon.com/512/2413/2413274.png) no-repeat center center;
+    background-size: 75%;
+    width: 1em;
+    border-left: 1px solid var(--borderColor);
+    opacity: 1; /* shows Spin Buttons per default (Chrome >= 39) */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.toggle-button--tuuli label {
+  height: 50px;
+  line-height: 50px;
+  transition: all 0.2s;
+  border-radius: 2rem; }
+  .toggle-button--tuuli label:before, .toggle-button--tuuli label:after {
+    position: absolute;
+    right: 1rem;
+    transition: all 0.2s .1s ease-out; }
+
+.toggle-button--tuuli input[type=checkbox] + label {
+  width: 50px;
+  background: #FF5335; }
+  .toggle-button--tuuli input[type=checkbox] + label:before {
+    opacity: 0;
+    transform: translate(0, 20px); }
+  .toggle-button--tuuli input[type=checkbox] + label:after {
+    opacity: 1;
+    transform: translate(0, 0); }
+
+.toggle-button--tuuli input[type=checkbox]:checked ~ label {
+  width: 50px;
+  background: #61B136; }
+
+.toggle-button--tuuli input[type=checkbox]:checked ~ .toggle-button__icon:before {
+  transform: translate(-30%, 100%) rotate(45deg) scale(0.6, 1); }
+
+.toggle-button--tuuli input[type=checkbox]:checked ~ .toggle-button__icon:after {
+  transform: translate(20%) rotate(-45deg); }
+
+.toggle-button--tuuli .toggle-button__icon {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: 0;
+  left: 0; }
+  .toggle-button--tuuli .toggle-button__icon:before, .toggle-button--tuuli .toggle-button__icon:after {
+    width: 25px;
+    height: 3px;
+    border-radius: 3px;
+    background: #fff;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    margin-left: -10%;
+    top: 48%; }
+  .toggle-button--tuuli .toggle-button__icon:before {
+    transform: rotate(45deg); }
+  .toggle-button--tuuli .toggle-button__icon:after {
+    transform: rotate(-45deg); }
+
+/* hide / show content (checkbox) */
+
+#steam-group-id-val{
+  display: none;
+}
+#steam-group-id-checkbox:checked ~ #steam-group-id-val{
+  display: block;
 }
 
 .range {
