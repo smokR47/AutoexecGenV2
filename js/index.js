@@ -1,17 +1,17 @@
-function checkAopacityOpacity (e) {
-    var element = document.getElementById(e.id)
-    if (element.checked) {
-        console.log(element.checked);
-        element.style.opacity = 0;
-    }
-    
-    return
-
-}
-
-function fillSVG(e) {
-    return
-}
+function copyToClipboard(id) {
+    /* Get the text field */
+    var copyText = document.getElementById(id);
+  
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /* For mobile devices */
+  
+     /* Copy the text inside the text field */
+    navigator.clipboard.writeText(copyText.value);
+  
+    /* Alert the copied text */
+    alert("successful copied text to clipboard!");
+  }
 
 function generate() {
     var exec = "echo Loading vic0s & pablit0s generated autoexec.cfg\n";
