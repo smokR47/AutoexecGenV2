@@ -1,5 +1,6 @@
 var genGif = document.getElementById('gen-gif');
 var execText = document.getElementById('exec-output');
+var title = document.getElementById('gen-exec-title');
 
 function toggleLinks() {
     var links = document.getElementById('gen-menu-links');
@@ -10,19 +11,20 @@ function toggleLinks() {
     else {
         links.setAttribute("style","opacity:0; -moz-opacity:0;")
     }
-    genGif.setAttribute("style","opacity:0; -moz-opacity:0;")
-    execText.setAttribute("style","opacity:1; -moz-opacity:1;")
 }
 
 function toggleExecOutput() {
     var genGifOpacity = window.getComputedStyle(genGif).getPropertyValue('opacity');
+    console.log(title);
     if (genGifOpacity ===  `${0}`) {
         execText.setAttribute("style","opacity:0; -moz-opacity:0;")
+        title.setAttribute("style","opacity:0; -moz-opacity:0;")
         genGif.setAttribute("style","opacity:1; -moz-opacity:1;")
     }
     else {
         genGif.setAttribute("style","opacity:0; -moz-opacity:0;")
         execText.setAttribute("style","opacity:1; -moz-opacity:1;")
+        title.setAttribute("style","opacity:1; -moz-opacity:1;")
     }
 }
 

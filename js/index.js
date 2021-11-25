@@ -13,6 +13,29 @@ function copyToClipboard(id) {
     alert("successful copied text to clipboard!");
   }
 
+function switchGenGif() {
+    var newGif;
+    var oldGif = document.getElementById('gen-gif')
+    var gif = oldGif.getAttribute('src')
+    if (gif.endsWith('first.gif')) {
+        newGif = './imgs/second.gif'
+    }
+    if (gif.endsWith('second.gif')) {
+        newGif = './imgs/third.gif'
+    }
+    if (gif.endsWith('third.gif')) {
+        newGif = './imgs/first.gif'
+    }
+    oldGif.src = newGif
+}
+
+document.getElementById('nav__cont').addEventListener('mouseover', function() {
+    document.getElementById('main-div').style.marginLeft = '15rem';
+})
+document.getElementById('nav__cont').addEventListener('mouseleave', function() {
+    document.getElementById('main-div').style.marginLeft = '7.5rem';
+})
+
 function generate() {
     var exec = "echo Loading vic0s & pablit0s generated autoexec.cfg\n";
     var form = document.forms[0]; // select the exec form
@@ -147,5 +170,10 @@ function generate() {
     document.getElementById("exec-output").value = exec;
     document.getElementById("exec-output").select()
 
+    //show textare
+    var genGif = document.getElementById('gen-gif');
+    var execText = document.getElementById('exec-output');
+    genGif.setAttribute("style","opacity:0; -moz-opacity:0;")
+    execText.setAttribute("style","opacity:1; -moz-opacity:1;")
     return exec;
 }
