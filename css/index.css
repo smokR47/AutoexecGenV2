@@ -842,6 +842,7 @@ html {
     transform: translate(0, -100%);
     opacity: 1;
     transition: linear 2s;
+    z-index: -1;
 }
 
 #exec-output {
