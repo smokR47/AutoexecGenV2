@@ -11,7 +11,7 @@ function copyToClipboard(id) {
   
     /* Alert the copied text */
     alert("successful copied text to clipboard!");
-  }
+}
 
 function switchGenGif() {
     var newGif;
