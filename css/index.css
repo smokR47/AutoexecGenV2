@@ -140,8 +140,11 @@ nav#top-navbar {
     }
 }
 
-.nav__cont {
+.nav__cont li {
   list-style-type: none;
+}
+
+.nav__cont {
   color:var(--navBarTextColor);
 }
 .side-nav:first-child {
