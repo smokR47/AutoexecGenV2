@@ -140,8 +140,11 @@ nav#top-navbar {
     }
 }
 
-.nav__cont {
+.nav__cont li {
   list-style-type: none;
+}
+
+.nav__cont {
   color:var(--navBarTextColor);
 }
 .side-nav:first-child {
@@ -638,6 +641,30 @@ p.by{
     white-space: nowrap;
   }
 
+  .extra-large-select-box {
+    text-align: center;
+    color: var(--textColor);
+    height: 3rem;
+    font-size: 2.0rem;
+    border: solid 1px var(--borderColor);
+    
+    padding: 15px 20px;
+    border-radius: 10px;  
+    width: 30rem;  
+    -webkit-appearance: button;
+    
+    -webkit-padding-end: 1.25rem;
+    -webkit-padding-start: 0.125rem;
+    background-position: 97% center;
+    background-repeat: no-repeat;  
+    background-color: var(--navbarBackgroundColor);
+    margin: 1.25rem;
+    overflow: hidden;
+    padding: 0.313rem 0.625rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
   select option {
     background-color: var(--navbarBackgroundColor);
   }
@@ -912,7 +939,7 @@ html {
   top: 53%;
   margin: auto;
   position: relative;
-  display:block;
+  display: block;
   height: 4rem;
   width: 4rem;
   border-radius: 50%;

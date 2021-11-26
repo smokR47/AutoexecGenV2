@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon"> 
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/donwload-button.css">
     <link rel="stylesheet" href="css/select-boxes.css">
@@ -158,7 +158,7 @@
                     <hr>
                     <div id="surround-sound">
                         <label for="surround-sound-dropdown"><span class="hovertext" data-hover="Set the type of Audio Output you have. Eg. 5.1 Surround or Stereo"><h4>Audio Output Configuration</h4></span></label>
-                        <select class="select-box large-select-box" name="surround-sound-dropdown" id="surround-sound-val">
+                        <select class="large-select-box" name="surround-sound-dropdown" id="surround-sound-val">
                             <option value="0" selected>Auto</option>
                             <option value="1">Stereo Headphones</option>
                             <option value="2">Stereo Speakers</option>
@@ -389,7 +389,7 @@
                     <hr>
                     <div id="bomb-pos">
                         <label for="bomb-pos-dropdown"><h4>Bomb HUD Location</h4></label>
-                        <select class="select-box large-select-box" name="bomb-pos-dropdown" id="bomb-pos-val">
+                        <select class="large-select-box" name="bomb-pos-dropdown" id="bomb-pos-val">
                             <option value="0">Show in Inventory</option>
                             <option value="1" selected>Show under Radar</option>
                         </select>
@@ -397,7 +397,7 @@
                     <hr>
                     <div id="mini-sc-pos">
                         <label for="mini-sc-pos-dropdown"><h4>Mini Scoreboard Location</h4></label>
-                        <select class="select-box large-select-box" name="mini-sc-pos-dropdown" id="mini-sc-pos-val">
+                        <select class="large-select-box" name="mini-sc-pos-dropdown" id="mini-sc-pos-val">
                             <option value="0" selected>Top of Screen</option>
                             <option value="1">Bottom of Screen</option>
                         </select>
@@ -405,7 +405,7 @@
                     <hr>
                     <div id="mini-sc-style">
                         <label for="mini-sc-style-dropdown"><h4>Mini Scoreboard Style</h4></label>
-                        <select class="select-box large-select-box" name="mini-sc-style-dropdown" id="mini-sc-style-val">
+                        <select class="large-select-box" name="mini-sc-style-dropdown" id="mini-sc-style-val">
                             <option value="0" selected>Show Avatars</option>
                             <option value="1">Just Show Player Count</option>
                         </select>
@@ -428,11 +428,74 @@
                         </div>
                         <input type="number" class="number-input" value="0" id="steam-group-id-val" onclick="this.select();">
                     </div>
+                    <hr>
+                    <div id="display-clan-in-death">
+                        <label for="display-clan-in-death-dropdown"><h4>Display Team Tags in Death Notices</h4></label>
+                        <select class="select-box" name="display-clan-in-death-dropdown" id="display-clan-in-death-val">
+                            <option value="1" selected>Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="show-target-id">
+                        <label for="show-target-id-dropdown"><h4>Show Enemy Name In Target</h4></label>
+                        <select class="select-box" name="show-target-id-dropdown" id="show-target-id-val">
+                            <option value="1" selected>Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="show-mate-pos">
+                        <label for="show-mate-pos-dropdown"><h4>Show Team Positions Ingame</h4></label>
+                        <select class="extra-large-select-box" name="show-mate-pos-dropdown" id="show-mate-pos-val">
+                            <option value="2" selected>Show Location and Equipment</option>
+                            <option value="1">Show Location</option>
+                            <option value="0">Off</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="show-mate-col">
+                        <label for="show-mate-col-dropdown"><h4>Show Teammates Colors in Competetive</h4></label>
+                        <select class="select-box" name="show-mate-col-dropdown" id="show-mate-col-val">
+                            <option value="1" selected>Show Colors</option>
+                            <option value="2">Colors and Letters</option>
+                            <option value="0">Off</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="own-color">
+                        <label for="own-color-dropdown"><h4>Your preferred Color</h4></label>
+                        <select class="select-box" name="own-color-dropdown" id="own-color-val">
+                            <option value="last" selected>Remember Last</option>
+                            <option value="0">Yellow</option>
+                            <option value="1">Purple</option>
+                            <option value="2">Green</option>
+                            <option value="3">Blue</option>
+                            <option value="4">Orange</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="lobby-privacy">
+                        <label for="lobby-privacy-dropdown"><h4>Friends Lobby Permission</h4></label>
+                        <select class="large-select-box" name="lobby-privacy-dropdown" id="lobby-privacy-val">
+                            <option value="1" selected>Friends Can Join</option>
+                            <option value="0">Friends Need Invite</option>
+                        </select>
+                    </div>
+                    <hr>
+                    <div id="looking-to-play">
+                        <label for="looking-to-play-dropdown"><h4>Looking to Play when CS:GO starts</h4></label>
+                        <select class="large-select-box" name="looking-to-play-dropdown" id="looking-to-play-val">
+                            <option value="0" selected>Disabled</option>
+                            <option value="1">Remember Last State</option>
+                            <option value="2">Automatic</option>
+                        </select>
+                    </div>
                 </div><!--div#game-->
             </form>
         </div><!--div#form-->
+
         <div id="generate" class="download-sub-container">
-            
             <button class="generate-btn" onclick="toggleLinks()"></button>
             <section id="generate-section-text">
                 <span id="generate-span" onclick="toggleLinks()+generate()">GENERATE</span>
