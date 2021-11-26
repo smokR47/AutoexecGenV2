@@ -37,9 +37,12 @@
 # Team
 - Steam Group Clan Tag
 - Display Team Tags in Death Notices
-- Show Team Positions in HUDShow Teammate Colors in Competetive
-- Friends Lobby Default Permissions
-- Looking to Play when CS:GO starts
+- Show Enemy Name In Target                         Yes / No
+- Show Team Positions in HUD                        Show Location and Equipment / Show Location / Off
+- Show Teammate Colors in Competetive               Show Colors / Show Colors and Letters / No
+- Choose Own Color
+- Friends Lobby Default Permissions                 Friends Need Invites / All Friends Can Join
+- Looking to Play when CS:GO starts                 Disabled / Remember Last State / Automatic
 # Communication
 - Player Pings
 - Mute Enemy Team- Mute all but Friends

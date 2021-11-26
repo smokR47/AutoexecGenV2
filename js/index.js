@@ -163,8 +163,18 @@ function generate() {
     exec += "cl_hud_playercount_pos " + form["mini-sc-pos-val"].value + "\n";
     exec += "cl_hud_playercount_showcount " + form["mini-sc-style-val"].value + "\n";
 
-
-
+    if (form["steam-group-id-checkbox"].checked) {
+        exec += "cl_clanid " + form["steam-group-id-val"].value + "\n";
+    }
+    exec += "cl_show_clan_in_death_notice " + form["display-clan-in-death-val"].value + "\n";
+    exec += "hud_showtargetid " + form["show-target-id-val"].value + "\n";
+    exec += "cl_teamid_overhead_mode " + form["show-mate-pos-val"].value + "\n";
+    exec += "cl_teammate_colors_show " + form["show-mate-col-val"].value + "\n";
+    if (form["own-color-val"].value !== "last") {
+        exec += "cl_color " + form["own-color-val"].value + "\n";
+    }
+    exec += "lobby_default_privacy_bits2 " + form["lobby-privacy-val"].value + "\n";
+    exec += "ui_setting_advertiseforhire_auto " + form["looking-to-play-val"].value + "\n";
 
     // fill textarea with the exec and select it
     document.getElementById("exec-output").value = exec;

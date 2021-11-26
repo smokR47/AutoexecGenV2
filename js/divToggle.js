@@ -15,7 +15,6 @@ function toggleLinks() {
 
 function toggleExecOutput() {
     var genGifOpacity = window.getComputedStyle(genGif).getPropertyValue('opacity');
-    console.log(title);
     if (genGifOpacity ===  `${0}`) {
         execText.setAttribute("style","opacity:0; -moz-opacity:0;")
         title.setAttribute("style","opacity:0; -moz-opacity:0;")
